@@ -1,0 +1,309 @@
+@charset "utf-8";
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0;box-sizing:border-box;}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search]{-webkit-appearance:textfield}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted ButtonText}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select{-moz-appearance:none;-webkit-appearance:none}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}img{border-style:none;vertical-align: bottom}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}ul,ol{list-style:none;}a{text-decoration:none;}.wrapper{overflow:hidden;}body{overflow-y:scroll;}img{max-width: 100%;}
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #e4bbbb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+h1{
+    width: 200px;
+    height: 40px;
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+background: url(../img/logo.svg)no-repeat center center/contain;
+    
+}
+
+
+#ham-btn{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #FFF;
+    position: relative;
+}
+#ham-btn>span{
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: -16px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transition: 0.3s;
+}
+#ham-btn>span::after{
+    display: block;
+    content:"";
+    width: 26px;
+    height: 3px;  
+    background-color: #fff;
+    position: absolute;
+    top:30px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transition: 0.3s;
+}
+#ham-btn.click>span{
+    top: 0;
+    transform: rotate(45deg);
+}
+#ham-btn.click>span::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+#g-nav{
+    width: 100%;
+    height:calc(100vh - 60px) ;
+    position: fixed;
+    top: 60px;
+    background-color :#ffdfd3 ;
+    padding: 40px;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    z-index: 9999;
+}
+#g-nav a{
+    display: block;
+    padding: 15px 0 15px 15px;
+    background-color: #ffdfd3;
+    border-bottom: 1px solid #555;
+}
+#g-nav.slide{
+    transform: translateX(0);    
+}
+main{
+    padding: 70px 10px 0 ;
+}
+.contents-img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.contents-img>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.contents-txt{
+    background-color: #f8dc99;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+.contents:nth-of-type(2)>.contents-txt{
+    background-color: #d291bc;
+}
+.contents:nth-of-type(3)>.contents-txt{
+    background-color: #fec8d8;
+}
+.txt{
+margin-bottom: 10px;
+}
+.contents-txt>h2{
+    margin-bottom: 20px;
+}
+.contents-btn{
+    width: 60%;
+    margin: 20px auto;
+}
+.contents-btn>a{
+    display: block;
+    padding: 10px 0;
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+}
+.contents-btn>a::after{
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid  #000;
+    border-right: 1px solid #000;
+    transform: rotate(45deg);
+    margin-left: 10px;
+}
+/* //col-1部分 */
+.col-1{
+padding: 40px;
+background-color: #f7db99;
+margin-bottom: 10px;
+}
+.col-1>h2{    
+margin-bottom: 30px;
+}
+.col-1>p{
+ line-height: 1.7;   
+}
+/* col-3－１部分 */
+.col-3-box{
+margin-bottom: 10px;    
+}
+.col-3-img{
+    width: 100%;
+    height: 240px;
+
+}
+.col-3-img>img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+.col-3-txt{
+    
+    background-color: #fec8d8;
+    padding: 40px;   
+}
+.col-3-box:nth-of-type(2)>.col-3-txt{
+    background-color: #ffdfd3;
+}
+.col-3-box:nth-of-type(3)>.col-3-txt{
+    background-color: #f59e7f;
+}
+p.col-3-txt>h3{
+margin-bottom: 20px;
+text-align: center;
+}
+.icon{
+    width: 80px;
+     padding: 16px;
+    /*border-radius: 50%;要素を丸くする */
+    clip-path:circle(50%) ;
+    margin: 0 auto 20px;
+    background-color: #fff;
+}
+footer{
+    background-color: #f7db99;
+}
+footer>p{
+    text-align: center;
+    padding: 40px 0;
+}
+/* タブレットレイアウト*/
+@media (min-width:768px){
+.contents{
+    display: flex;
+    justify-content: space-between;
+}
+.contents-img{
+    height: 360px;
+    width: calc((100% - 10px) / 3 * 2);
+}
+.contents-txt{
+    width: calc((100% - 10px) / 3);
+}
+.contents:nth-of-type(even){
+flex-direction: row-reverse;
+}
+.col-1{
+    text-align: center;
+    padding: 80px 40px;
+
+}
+.col-1>p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.col-3-box{
+    display: flex;
+}
+.col-3-img{
+    width: 50%;
+    height: 300px;
+}
+.col-3-txt{
+    width: 50%;
+}
+#g-nav{
+    width: 40%;
+}
+#nav-wrapper{
+    width: 100%;
+    height:calc(100vh - 60px) ;
+    position: fixed;
+    top: 60px;
+    z-index: 16;
+    background-color: rgba(0, 0, 0, 0.609);
+    display: none;
+}
+
+}
+/* PCレイアウト*/
+@media (min-width:900px){
+    header{
+        height: 80px;
+    }
+    #g-nav{
+        
+    height:calc(100vh - 80px) ;
+      top: 80px;
+       
+    }
+    h1{
+        width: 360px;
+        height:60px;
+        margin: 0 auto;
+    }
+    main{
+        padding: 90px 10px 0 ;
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+  .col-3-wrapper{
+      display: flex;
+      justify-content: space-between;
+
+  }  
+  .col-3-box{
+      width: calc((100% - 20px) / 3);
+      display: block;
+  }
+  .col-3-img{
+    width: 100%;
+}
+.col-3-txt{
+    width: 100%;
+}
+
+}
+
+/* //ローディングアニメーション */
+#curtain{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffdfd3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+}
+#svg-box{
+    width: 40%;
+}
+#layer_1 path{
+    stroke: aqua;/* 線の色 */
+    fill:#ffdfd3;/* 塗の色 */
+    stroke-width: 1px;/* 線幅 */
+    stroke-dasharray: 200px;/* 破線の間隔 */
+    stroke-dashoffset:200px ;/* 破線の間隔と同じ値 */
+    animation:svg 2s 0.5s linear forwards ;/* 名前　秒数　等速　 */
+}
+@keyframes svg{
+    0%{stroke-dashoffset: 200px;}
+    70%{stroke-dashoffset: 0;fill:#ffdfd3;}
+    100%{stroke-dashoffset: 0;fill:aqua;}
+}

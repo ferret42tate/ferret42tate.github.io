@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>furniture-store</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>furniture-store</h1>
+<p id="ham-btn"><span></span></p>
+</header>
+<nav id="g-nav">
+<ul>
+<li><a href="#">Brands</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">Stores</a></li>
+<li><a href="#">Catalogs</a></li>
+<li><a href="#">Styling tips</a></li>
+<li><a href="#">Partners & Press</a></li>
+</ul>
+</nav>
+<main>
+<div class="contents-wrapper">
+<div class="contents">
+<div class="contents-img">
+<img src="img/contents01.jpg" alt="">
+</div>
+<div class="contents-txt">
+<h2>Lorem, ipsum dolor.</h2>
+<p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quo doloribus reiciendis, possimus quasi error dolor.</p>
+<p class="contents-btn">
+<a href="#">Lorem, ipsum.</a>
+</p>
+</div>
+</div><!-- /.contents -->
+
+<div class="contents">
+<div class="contents-img">
+<img src="img/contents02.jpg" alt="">
+</div>
+<div class="contents-txt">
+<h2>Lorem, ipsum dolor.</h2>
+<p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quo doloribus reiciendis, possimus quasi error dolor.</p>
+<p class="contents-btn">
+<a href="#">Lorem, ipsum.</a>
+</p>
+</div>
+</div><!-- /.contents -->
+
+<div class="contents">
+<div class="contents-img">
+<img src="img/contents03.jpg" alt="">
+</div>
+<div class="contents-txt">
+<h2>Lorem, ipsum dolor.</h2>
+<p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quo doloribus reiciendis, possimus quasi error dolor.</p>
+<p class="contents-btn">
+<a href="#">Lorem, ipsum.</a>
+</p>
+</div>
+</div><!-- /.contents -->
+</div><!-- /.contents-wrapper -->
+
+</main>
+<footer></footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

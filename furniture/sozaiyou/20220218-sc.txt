@@ -1,0 +1,9 @@
+$(function(){
+//ハンバーガー
+$('#ham-btn').on('click',function(){
+$(this).toggleClass('click');
+
+//$('#g-nav').fadeToggle();
+//$('#g-nav').slideToggle(200);
+$('#g-nav').toggleClass('slide');
+});
