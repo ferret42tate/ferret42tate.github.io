@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0;box-sizing:border-box;}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search]{-webkit-appearance:textfield}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted ButtonText}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select{-moz-appearance:none;-webkit-appearance:none}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}img{border-style:none;vertical-align: bottom}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}ul,ol{list-style:none;}a{text-decoration:none;}.wrapper{overflow:hidden;}body{overflow-y:scroll;}img{max-width: 100%;}
+
+h1{text-align: center;
+margin: 40px 0  20px;
+font-size: 40px;}
+.banner-wrapper>h2{margin: 20px 0 16px 0  ;
+width: 100%;}
+.banner-wrapper{display: flex;
+max-width: 1080px;
+margin: 80px auto;
+flex-wrap: wrap;
+justify-content: space-between;}
+.banner-box{width: 48%;
+background-color: rgb(255, 255, 255);
+padding: 32px;
+padding-bottom: 40px;}
+.banner-box>h3{margin-bottom: 10px;
+background-color: rgb(255, 255, 255);}
+.banner-box p{font-size: 15px;}
+
+.banner-txt-wrapper{display: flex;
+justify-content: space-between;}
+.banner-pc-img{width: 336px;
+height: 300px;}
+.banner-sp-img{width: 320px;
+height: 300px;}
+
+
+
+
+.bunner-text-box.color>p::after{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;   
+    margin-left: 6px;}
+    /* 自身サイト */
+.my-site>.pc1 .bunner-text-box.color>p:nth-of-type(1)::after{
+    background-color: #86949b;
+    border: 1px solid #000;}
+.my-site>.pc1 .bunner-text-box.color>p:nth-of-type(2)::after{
+    background-color: #f8f0f0;
+    border: 1px solid #000;}
+.my-site>.pc1 .bunner-text-box.color>p:nth-of-type(3)::after{
+    background-color: #157ec7;
+    border: 1px solid #000;}
+
+    .my-site>.sp1 .bunner-text-box.color>p:nth-of-type(1)::after{
+    background-color: #5d4332;
+    border: 1px solid #000;}
+    .my-site>.sp1 .bunner-text-box.color>p:nth-of-type(2)::after{
+    background-color: #8cc3e2;
+    border: 1px solid #000;}
+    .my-site>.sp1 .bunner-text-box.color>p:nth-of-type(3)::after{
+    background-color: #1685ca;
+    border: 1px solid #000;}
+
+    /* Felicaサイト */
+    .my-site>.pc2 .bunner-text-box.color>p:nth-of-type(1)::after{
+        background-color: #c9e46f;
+        border: 1px solid #000;}
+    .my-site>.pc2 .bunner-text-box.color>p:nth-of-type(2)::after{
+        background-color: #92f080;
+        border: 1px solid #000;}
+    .my-site>.pc2 .bunner-text-box.color>p:nth-of-type(3)::after{
+        background-color: #027558;
+        border: 1px solid #000;}
+    
+        .my-site>.sp2 .bunner-text-box.color>p:nth-of-type(1)::after{
+        background-color: #004f3b;
+        border: 1px solid #000;}
+        .my-site>.sp2 .bunner-text-box.color>p:nth-of-type(2)::after{
+        background-color: #cae570;
+        border: 1px solid #000;}
+        .my-site>.sp2 .bunner-text-box.color>p:nth-of-type(3)::after{
+        background-color: #008a5a;
+        border: 1px solid #000;}
+
+         /* NATORIサイト */
+    .my-site>.pc3 .bunner-text-box.color>p:nth-of-type(1)::after{
+        background-color: #009e96;
+        border: 1px solid #000;}
+    .my-site>.pc3 .bunner-text-box.color>p:nth-of-type(2)::after{
+        background-color: #ffffff;
+        border: 1px solid #000;}
+    .my-site>.pc3 .bunner-text-box.color>p:nth-of-type(3)::after{
+        background-color: #32429e;
+        border: 1px solid #000;}
+    
+        .my-site>.sp3 .bunner-text-box.color>p:nth-of-type(1)::after{
+        background-color: #009e96;
+        border: 1px solid #000;}
+        .my-site>.sp3 .bunner-text-box.color>p:nth-of-type(2)::after{
+        background-color: #ffffff;
+        border: 1px solid #000;}
+        .my-site>.sp3 .bunner-text-box.color>p:nth-of-type(3)::after{
+        background-color: #32429e;
+        border: 1px solid #000;}
+
+                 /* gifanimeサイト */
+    .my-site>.pc4 .bunner-text-box.color>p:nth-of-type(1)::after{
+        background-color: #ffffff;
+        border: 1px solid #000;}
+    .my-site>.pc4 .bunner-text-box.color>p:nth-of-type(2)::after{
+        background-color: #000000;
+        border: 1px solid #000;}
+    .my-site>.pc4 .bunner-text-box.color>p:nth-of-type(3)::after{
+        background-color: #93484e;
+        border: 1px solid #000;}
+    
+        .my-site>.sp4 .bunner-text-box.color>p:nth-of-type(1)::after{
+        background-color: #86949b;
+        border: 1px solid #000;}
+        .my-site>.sp4 .bunner-text-box.color>p:nth-of-type(2)::after{
+        background-color: #f8f0f0;
+        border: 1px solid #000;}
+        .my-site>.sp4 .bunner-text-box.color>p:nth-of-type(3)::after{
+        background-color: #157ec7;
+        border: 1px solid #000;}
+    
+                      /* 爽やか系サイト */
+    .my-site>.pc5 .bunner-text-box.color>p:nth-of-type(1)::after{
+        background-color: #02accd;
+        border: 1px solid #000;}
+    .my-site>.pc5 .bunner-text-box.color>p:nth-of-type(2)::after{
+        background-color: #f4f100;
+        border: 1px solid #000;}
+    .my-site>.pc5 .bunner-text-box.color>p:nth-of-type(3)::after{
+        background-color: #469135;
+        border: 1px solid #000;}
+    
+        .my-site>.sp5 .bunner-text-box.color>p:nth-of-type(1)::after{
+        background-color: #e1005e;
+        border: 1px solid #000;}
+        .my-site>.sp5 .bunner-text-box.color>p:nth-of-type(2)::after{
+        background-color: #adccef;
+        border: 1px solid #000;}
+        .my-site>.sp5 .bunner-text-box.color>p:nth-of-type(3)::after{
+        background-color: #ef9eae;
+        border: 1px solid #000;}
+
+                           /* 春のウキウキ系サイト */
+    .my-site>.pc6 .bunner-text-box.color>p:nth-of-type(1)::after{
+        background-color: #ffffff;
+        border: 1px solid #000;}
+    .my-site>.pc6 .bunner-text-box.color>p:nth-of-type(2)::after{
+        background-color: #ffe0ff;
+        border: 1px solid #000;}
+   
+    
+        .my-site>.sp6 .bunner-text-box.color>p:nth-of-type(1)::after{
+        background-color: #ffffff;
+        border: 1px solid #000;}
+        .my-site>.sp6 .bunner-text-box.color>p:nth-of-type(2)::after{
+        background-color: #ff8fb3;
+        border: 1px solid #000;}
+
+                              /* 企業系サイト */
+    .my-site>.pc7 .bunner-text-box.color>p:nth-of-type(1)::after{
+        background-color: #d6ff00;
+        border: 1px solid #000;}
+    .my-site>.pc7 .bunner-text-box.color>p:nth-of-type(2)::after{
+        background-color: #ffffff;
+        border: 1px solid #000;}
+    .my-site>.pc7 .bunner-text-box.color>p:nth-of-type(3)::after{
+        background-color: #1b3800;
+        border: 1px solid #000;}
+    
+        .my-site>.sp7 .bunner-text-box.color>p:nth-of-type(1)::after{
+        background-color: #fffe00;
+        border: 1px solid #000;}
+        .my-site>.sp7 .bunner-text-box.color>p:nth-of-type(2)::after{
+        background-color: #f8751b;
+        border: 1px solid #000;}
+        .my-site>.sp7 .bunner-text-box.color>p:nth-of-type(3)::after{
+        background-color: #42c924;
+        border: 1px solid #000;}
+ 
+ /* 企業系サイト */
+.my-site>.pc8 .bunner-text-box.color>p:nth-of-type(1)::after{
+background-color: #e2efe8;
+border: 1px solid #000;}
+.my-site>.pc8 .bunner-text-box.color>p:nth-of-type(2)::after{
+background-color: #f9e2c0;
+border: 1px solid #000;}
+ .my-site>.pc8 .bunner-text-box.color>p:nth-of-type(3)::after{
+background-color: #e8d7dd;
+border: 1px solid #000;}
+                        
+.my-site>.sp8 .bunner-text-box.color>p:nth-of-type(1)::after{
+background-color: #ffffff;
+border: 1px solid #000;}
+.my-site>.sp8 .bunner-text-box.color>p:nth-of-type(2)::after{
+background-color: #2e91ba;
+border: 1px solid #000;}
+     
+    
