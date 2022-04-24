@@ -1,0 +1,53 @@
+@use "reset";
+
+h1{
+    text-align: center;
+    margin: 30px 0;
+}
+.btn-wrapper{
+    max-width: 1200px;
+    margin: 0 auto 80px;
+}
+button{
+    width: 140px;
+    display: inline-block;
+    padding: 10px  20px;
+    background-color: rgb(228, 245, 168);
+    margin: 0 10px;
+    &:hover{
+        background-color: rgb(227, 198, 160);
+    }/* button:hoverではなく、&でbuttonを表す */
+}
+.gallery-wrapper{
+    max-width: 1200px;
+    margin: 0 auto 100px;
+    display: flex;
+    gap: 20px;
+}
+.gallery-img{
+width:calc((100% - 20px) / 3 );/* 間に20PX入れて3で割る */
+h2{
+    margin: 10px 0 ;
+    color: blueviolet;
+    padding: 4px;
+}
+a:hover>h2{
+width: fit-content;
+/* background-color: coral; */
+background-image: linear-gradient(to bottom,#ffffff00 60%,60%,#eff536 100%);
+}/* 初めの60％まで、白、その後の60%は開始位置、100%は到達点 */
+}/* ffffff00で白かつ透明 */
+
+/* 詳細ページのスタイル */
+.page-wrapper{
+    text-align: center;
+h1{
+    
+margin: 40px 0;
+}
+.site-page{
+max-width: 1200px;
+margin: 0 auto 50px;
+
+}
+}

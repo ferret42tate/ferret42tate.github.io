@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallerypage</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+ <h1>Gallerypage</h1>
+    
+<div class="btn-wrapper">
+<button type="button" data-filter="all">すべて</button>
+<button type="button" data-filter=".web-1">カテゴリー1</button>
+<button type="button" data-filter=".web-2">カテゴリー2</button>
+<button type="button" data-filter=".web">カテゴリー3</button>
+<div class="gallery-wrapper">
+
+    <div class="gallery-img web-1 mix" >
+ <a href="javascript:;" data-type="iframe" data-src="works1.html" data-fancybox="gallery">
+<img src="img/site-01.jpg" alt="">
+<h2>サイトのタイトル</h2>
+</a>
+</div><!-- gallery-img -->
+
+<div class="gallery-img web-2 mix">
+    <a href="javascript:;" data-type="iframe" data-src="site-02/index.html" data-fancybox="gallery">
+    <img src="img/site-02.jpg" alt="">
+    <h2>サイトのタイトル</h2>
+</a>
+
+    </div><!-- gallery-img -->
+</div><!-- .gallery-wrapper -->
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/mixitup.js"></script>
+<!-- <script src="js/jquery.fancybox.js"></script> -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script>
+    var mixer = mixitup('.gallery-wrapper');
+</script><!-- 動かく要素をかこっているものを選ぶ -->
+
+</body>
+</html>
